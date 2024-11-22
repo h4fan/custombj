@@ -1,0 +1,40 @@
+---
+common-css:
+  - "/assets/css/bootstrap-social.css"
+  - "/assets/css/beautifuljekyll.css"
+common-ext-css:
+  - href: "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    sri: "sha512-znmTf4HNoF9U6mfB6KlhAShbRvbt4CvCaHoNV0gyssfToNQ/9A0eNdUbvsSwOIUoJdMjFG2ndSvr0Lo3ZpsTqQ=="
+  - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  - "https://ohmyfont.pages.dev/css?family=Lora:400,700,400italic,700italic"
+  - "https://ohmyfont.pages.dev/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-ext-js:
+  - href: "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"
+    sri: "sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g=="
+  - href: "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+    sri: "sha512-hCP3piYGSBPqnXypdKxKPSOzBHF75oU8wQ81a6OiGXHFMeKs9/8ChbgYl7pUvwImXJb03N4bs1o1DzmbokeeFw=="
+  - href: "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"
+    sri: "sha512-jCaU0Dp3IbMDlZ6f6dSEQSnOrSsugG6F6YigRWnagi7HoOLshF1kwxLT4+xCZRgQsTNqpUKj6WmWOxsu9l3URA=="
+common-js:
+  - "/assets/js/beautifuljekyll.js"
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.language | default: site.language | default: 'en' }}">
+<!-- Beautiful Jekyll 6.0.1 | Copyright Dean Attali 2023 -->
+{% include head.html %}
+
+<body>
+
+  {% include gtm_body.html %}
+
+  {% include nav.html %}
+
+  {{ content }}
+
+  {% include footer.html %}
+
+  {% include footer-scripts.html %}
+
+</body>
+</html>
